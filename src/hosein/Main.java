@@ -2,7 +2,7 @@ package hosein;
 
 public class Main {
     public static void main(String[] args) {
-       // Crystal goldan=new Crystal();
+        Crystal goldan=new Crystal();
         Crystal.setAndaze(20);
         goldan .setMark("check");
         goldan.setGiymat(10000);
