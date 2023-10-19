@@ -1,20 +1,22 @@
 package entity;
 
 public class ShareholderBrand {
-    private int shareholderId;
-    private int brandId;
+    private Shareholder shareholder;
+    private Brand brand;
 
+    public Shareholder getShareholder() {
+        return shareholder;
+    }
 
-    public int getShareholderId(){
-        return shareholderId;
+    public void setShareholder(Shareholder shareholder) {
+        this.shareholder = shareholder;
     }
-    public void setShareholderId(int shareholderId){
-        this.shareholderId=shareholderId;
+
+    public Brand getBrand() {
+        return brand;
     }
-    public int getBrandId(){
-        return brandId;
-    }
-    public void setBrandId(int brandId){
-        this.brandId=brandId;
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
 }
