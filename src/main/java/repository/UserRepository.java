@@ -16,7 +16,7 @@ public class UserRepository {
 
     public int save(User user) throws SQLException {
 
-        String query = "INSERT IN TO USERS(name, username, email, password) values(?,?,?,?)";
+        String query = "INSERT IN TO users(name, username, email, password) values(?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1,user.getName());
         preparedStatement.setString(2,user.getUserName());

@@ -9,12 +9,13 @@ import java.sql.SQLException;
 
 public class ShareholderRepository {
 
-    public Connection connection = JdbcConnection.getConnection();
+
+    private Connection connection = JdbcConnection.getConnection();
 
 
     public ShareholderRepository() throws SQLException {
     }
-    public int save(Shareholder shareholder) throws SQLException {
+    public  int save(Shareholder shareholder) throws SQLException {
 
         String query = "INSERT IN TO shareholder(name , phoneNumber, nationalCode) valus(?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query);

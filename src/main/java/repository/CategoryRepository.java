@@ -10,16 +10,16 @@ import java.sql.SQLException;
 
 public class CategoryRepository {
 
-    public Connection connection= JdbcConnection.getConnection();
+    public  Connection connection= JdbcConnection.getConnection();
 
     public CategoryRepository() throws SQLException {
     }
 
-    public int seve(Category category) throws SQLException {
-      String query ="INSERT IN TO Category(, name, description) valus(?,?,)";
+    public  int save(Category category) throws SQLException {
+      String query ="INSERT IN TO Category( name, description) valus(?,?)";
         PreparedStatement preparedStatement=connection.prepareStatement(query);
         preparedStatement.setString(1,category.getName());
-        preparedStatement.setString(1,category.getDescription());
+        preparedStatement.setString(2,category.getDescription());
         int result=preparedStatement.executeUpdate();
         return result;
 

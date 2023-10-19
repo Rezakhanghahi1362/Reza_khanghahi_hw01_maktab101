@@ -29,4 +29,8 @@ public class BrandRepository {
 
 
     }
+
+    public int Save(Brand brand) {
+        return 0;
+    }
 }

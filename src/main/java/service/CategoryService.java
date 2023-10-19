@@ -15,8 +15,8 @@ public class CategoryService {
 
     public  int save(Category category) throws SQLException {
 
-        Category Category = new Category();
-        return CategoryRepository.save(Category);
+
+        return categoryRepository.save(category);
     }
 
 
