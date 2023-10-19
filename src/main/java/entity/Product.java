@@ -2,10 +2,19 @@ package entity;
 
 public class Product {
     private int id;
+    private String name;
     private String creatDate;
     private int categoryId;
     private int brandId;
 
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getId() {
         return id;
